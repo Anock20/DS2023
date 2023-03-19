@@ -3,8 +3,9 @@ public class Car implements Vehicle {
     public String color = null;
     public String name = null;
 
-    public Car (String name, String color) {
+    public Car (String type, String color) {
         setColor(color);
+        setType(type);
     }
     public String getType(){
         return type;
@@ -19,7 +20,7 @@ public class Car implements Vehicle {
         this.color = color;
     }
     public String toString(){
-        return getColor() + "" + getType();
+        return getColor() + " " + getType();
     }
 }
 

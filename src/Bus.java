@@ -19,6 +19,6 @@ public class Bus implements Vehicle {
         this.color = color;
     }
     public String toString(){
-        return getColor() + "" + getType();
+        return getColor() + " " + getType();
     }
 }
